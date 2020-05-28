@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import HttpRequest
 # Create your views here.
 
 def index(request):
@@ -8,6 +9,7 @@ def index(request):
 
 def search(request):
     # add search capabilities
+    # response = self.client.get('/api/translations/')
     return HttpResponse("Search Endpoint")
 
 def addWord(request):

@@ -1,6 +1,7 @@
 from django.test import TestCase
 from rest_framework.test import APITestCase
 
+
 from dictionary.models import Dictionary
 
 class DictionaryCreateTestCase(APITestCase):
