@@ -27,9 +27,6 @@ urlpatterns = [
     path('api/translations/new/', api_views.DictionaryCreate.as_view()),
     path('api/translations/<int:id>/', api_views.DictionaryRetrieveUpdateDestroy.as_view()),
 
-    path('admin/', admin.site.urls),
-    path('',views.index, name='index'),
-    path('search/',views.search, name='search'),
-    path('add/',views.addWord, name='add'),
+    path('', include('dictionary.urls')),
 
 ] + static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)
