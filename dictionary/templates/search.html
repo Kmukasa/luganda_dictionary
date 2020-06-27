@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class='container' id="content-block"></div>
+        <div id="option-bar">
+            <p id="option">{{ option }}</p>
+        </div>  
+        <div class="row" id="translation-block">
+            <div class="col-4" id="word-col">{{ english_word | capfirst }}</div>
+            <div class="col-8" id="translation-col"> {{ luganda_word | capfirst}}</div>
+        </div>
+    </div>
+{% endblock %}

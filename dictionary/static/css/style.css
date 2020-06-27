@@ -1,0 +1,657 @@
+/* HOME PAGE CSS */
+body, html{
+    height:100%;
+}
+.bg{
+    background-image: url('../img/sam-balye-Z0vH749bRIU-unsplash.jpg');
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Small Screens - 600px and lower */
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 250%;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        justify-content: center;
+        text-align: center;
+    }
+    .preloader{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:#FFF; 
+        /* change if the mask should have another color then white */
+        z-index:99999;
+    
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    #spin-wrapper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-fluid{
+        height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    
+    #left-row{
+        height: 100%;
+        display: block;
+    }
+    #left-block{
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        padding: 2rem;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    #form-arrow-container{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: 100%;
+        /* display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);  */
+    }
+    
+    #form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    
+    select{
+        text-align-last:center;
+    }
+    textarea{
+        text-align: center;
+    }
+    form{
+        top: 50%;
+    }
+    .centered{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #arrow{
+        padding-top: 5%;
+        padding-bottom: 0px;
+    }
+    
+    #right-block{
+        text-align: center;
+    }
+    
+    /* SEARCH PAGE CSS */
+
+    /* row */
+    #translation-block{
+        background-color: whitesmoke;
+        margin-top: 20px;
+        padding-bottom: 20%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+    
+    #word-col, #translation-col{
+        margin-top: 1rem;
+    }
+    
+    #content-block{
+        padding-top: 10%;   
+    }
+    
+    
+    #option-bar{
+        background-color: whitesmoke;
+        border-radius: 25px;
+        /* padding-top: 2%;
+        padding-bottom: 2%; */
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
+    }
+    
+    #option{
+        color:black;
+        font-family: Lato;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+    }
+
+    form{
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    h1{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 400%;
+
+        padding-top: 30%;
+        padding-bottom: 15%;
+    }
+    .preloader{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:#FFF; 
+        /* change if the mask should have another color then white */
+        z-index:99999;
+    
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    #spin-wrapper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-fluid{
+        height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    
+    #left-row{
+        height: 100%;
+        display: block;
+    }
+    #left-block{
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        padding: 2rem;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    #form-arrow-container{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: 100%;
+        /* display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);  */
+    }
+    
+    #form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    
+    select{
+        text-align-last:center;
+    }
+    textarea{
+        text-align: center;
+    }
+    form{
+        top: 50%;
+    }
+    .centered{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #arrow{
+        padding-top: 5%;
+        padding-bottom: 0px;
+    }
+    
+    #right-block{
+        text-align: center;
+    }
+    
+    /* SEARCH PAGE CSS */
+
+    /* row */
+    #translation-block{
+        background-color: whitesmoke;
+        margin-top: 20px;
+        padding-bottom: 20%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+    
+    #word-col, #translation-col{
+        margin-top: 1rem;
+    }
+    
+    #content-block{
+        padding-top: 10%;   
+    }
+    
+    
+    #option-bar{
+        background-color: whitesmoke;
+        border-radius: 25px;
+        /* padding-top: 2%;
+        padding-bottom: 2%; */
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
+    }
+    
+    #option{
+        color:black;
+        font-family: Lato;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 790px) { 
+    h1{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 400%;
+
+        padding-top: 30%;
+        padding-bottom: 15%;
+    }
+    .preloader{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:#FFF; 
+        /* change if the mask should have another color then white */
+        z-index:99999;
+    
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    #spin-wrapper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-fluid{
+        height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #left-row{
+        display: block;
+        height: 100%;
+    }
+    #left-block{
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        padding: 2rem;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    h1{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 400%;
+
+        padding-top: 30%;
+        padding-bottom: 15%;
+    }
+    .preloader{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:#FFF; 
+        /* change if the mask should have another color then white */
+        z-index:99999;
+    
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    #spin-wrapper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-fluid{
+        height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #left-row{
+        height: 100%;
+        display: flex;
+    }
+    #left-block{
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        padding: 2rem;
+        position: relative;
+        text-align: center;
+        
+    }
+    #form-arrow-container{
+        padding-top: 10%;
+        padding-bottom: 0%;
+        width: 100%;
+        /* display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);  */
+    }
+    
+    #form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    
+    select{
+        text-align-last:center;
+    }
+    textarea{
+        text-align: center;
+    }
+    form{
+        top: 50%;
+    }
+    .centered{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #arrow{
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    
+    #right-block{
+        height: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    /* SEARCH PAGE CSS */
+
+    /* row */
+    #translation-block{
+        background-color: whitesmoke;
+        margin-top: 20px;
+        padding-bottom: 20%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+    
+    #word-col, #translation-col{
+        margin-top: 1rem;
+    }
+    
+    #content-block{
+        padding-top: 10%;   
+    }
+    
+    
+    #option-bar{
+        background-color: whitesmoke;
+        border-radius: 25px;
+        /* padding-top: 2%;
+        padding-bottom: 2%; */
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
+    }
+    
+    #option{
+        color:black;
+        font-family: Lato;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    h1{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 500%;
+
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .preloader{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:#FFF; 
+        /* change if the mask should have another color then white */
+        z-index:99999;
+    
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    #spin-wrapper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-fluid{
+        height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #left-row{
+        height: 100%;
+        display: flex;
+    }
+    #left-block{
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        padding: 2rem;
+        position: relative;
+        text-align: center;
+        
+    }
+    #form-arrow-container{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: 100%;
+        /* display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);  */
+    }
+    
+    #form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    
+    select{
+        text-align-last:center;
+    }
+    textarea{
+        text-align: center;
+    }
+    form{
+        top: 50%;
+    }
+    .centered{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #arrow{
+        padding-top: 5%;
+        padding-bottom: 0px;
+    }
+    
+    #right-block{
+        height: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    /* SEARCH PAGE CSS */
+
+    /* row */
+    #translation-block{
+        background-color: whitesmoke;
+        margin-top: 20px;
+        padding-bottom: 20%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+    
+    #word-col, #translation-col{
+        margin-top: 1rem;
+    }
+    
+    #content-block{
+        padding-top: 10%;   
+    }
+    
+    
+    #option-bar{
+        background-color: whitesmoke;
+        border-radius: 25px;
+        /* padding-top: 2%;
+        padding-bottom: 2%; */
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
+    }
+    
+    #option{
+        color:black;
+        font-family: Lato;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+    }
+ }
+
+@media (min-width: 2000px){
+
+    .bg{
+        background-image: url('../img/sam-balye-Z0vH749bRIU-unsplash.jpg');
+        height: 100%;
+    
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    h1{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 750%;
+
+        padding-top: 25%;
+        padding-bottom: 15%;
+    }
+
+    #form-arrow-container{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: 100%;
+    }
+ }
