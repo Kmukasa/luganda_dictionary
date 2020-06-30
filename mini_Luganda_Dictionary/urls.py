@@ -26,6 +26,19 @@ urlpatterns = [
     path('api/translations/', api_views.DictionaryList.as_view()),
     path('api/translations/new/', api_views.DictionaryCreate.as_view()),
     path('api/translations/<int:id>/', api_views.DictionaryRetrieveUpdateDestroy.as_view()),
+    
+    path('api/luganda/', api_views.LugandaList.as_view()),
+    path('api/luganda/new/', api_views.LugandaCreate.as_view()),
+    path('api/luganda/<int:id>/', api_views.LugandaRetrieveUpdateDestroy.as_view()),
+
+    path('api/english/', api_views.EnglishList.as_view()),
+    path('api/english/new/', api_views.EnglishCreate.as_view()),
+    path('api/english/<int:id>/', api_views.EnglishRetrieveUpdateDestroy.as_view()),
+
+
+
+
+    path('api/english/', api_views.EnglishList.as_view()),
 
     path('', include('dictionary.urls')),
 
