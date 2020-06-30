@@ -16,6 +16,6 @@ class LugandaDictSerializer(serializers.ModelSerializer):
 class EnglishDictSerializer(serializers.ModelSerializer):
     class Meta:
         model   = EnglishDict
-        fields  = ('english_word', 'word_form', 'english_example', 'last_edited', 'luganda_word')
+        fields  = ('english_word', 'word_form', 'english_example', 'last_edited','translations')
     
         

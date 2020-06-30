@@ -101,6 +101,7 @@ class LugandaDict(models.Model):
 
     def __repr__(self):
         luganda_word = self.luganda_word or '[No Translation]'
+        word_form    = self.word_form or '[No Word Type]'
         return '<Dictionary Translation ({}) "{}" "{}">'.format(self.id, luganda_word, word_form)
 
     __str__ = __repr__
@@ -141,6 +142,7 @@ class EnglishDict(models.Model):
     
     def __repr__(self):
         ennglish_word = self.english_word or '[No Translation]'
+        word_form     = self.word_form or '[No Word Type]'
         return '<Dictionary Translation ({}) "{}" "{}">'.format(self.id, english_word, word_form)
 
     __str__ = __repr__

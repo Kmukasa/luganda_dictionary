@@ -35,11 +35,6 @@ urlpatterns = [
     path('api/english/new/', api_views.EnglishCreate.as_view()),
     path('api/english/<int:id>/', api_views.EnglishRetrieveUpdateDestroy.as_view()),
 
-
-
-
-    path('api/english/', api_views.EnglishList.as_view()),
-
     path('', include('dictionary.urls')),
 
 ] + static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)

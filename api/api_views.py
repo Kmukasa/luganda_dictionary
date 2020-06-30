@@ -124,7 +124,7 @@ class EnglishCreate(CreateAPIView):
 
     def create(self, request, *args, **kwargs ):
         try:
-            english_word = request.data.get('luganda_word')
+            english_word = request.data.get('english_word')
 
             if emglish_word is None or english_word == "":
                 raise ValidationError({'english_word': 'Must not be empty'})
@@ -152,6 +152,6 @@ class EnglishRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
         if response.status_code == 200:
             from django.core.cache import cache
             translation = response.data
-            cache.set('dictionary_data_{}'.format(translation['id']), {'luganda_word':translation['luganda_word'],})
+            cache.set('dictionary_data_{}'.format(translation['id']), {'english':translation['english_word'],})
 
         return response    
